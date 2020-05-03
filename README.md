@@ -13,3 +13,9 @@ next,js is a React library that can be used for routing pages without using Reac
 **Can not** use:
 
 - CSS modules (because cant use the webpack configuration that next.js uses)
+
+## Deployment
+
+Need a host that can run Node.js .
+
+`npm run build`
