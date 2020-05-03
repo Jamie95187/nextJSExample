@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_error.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -542,23 +542,23 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2F_error.js&hotRouterUpdates=true!./":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2F_error.js&hotRouterUpdates=true ***!
-  \**************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2Findex.js&hotRouterUpdates=true!./":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2Findex.js&hotRouterUpdates=true ***!
+  \*******************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     (window.__NEXT_P = window.__NEXT_P || []).push([
-      "/_error",
+      "/",
       function () {
-        var mod = __webpack_require__(/*! ./pages/_error.js */ "./pages/_error.js");
+        var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js");
         if (true) {
-          module.hot.accept(/*! ./pages/_error.js */ "./pages/_error.js", function () {
-            if (!next.router.components["/_error"]) return;
-            var updatedPage = __webpack_require__(/*! ./pages/_error.js */ "./pages/_error.js");
-            next.router.update("/_error", updatedPage);
+          module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function () {
+            if (!next.router.components["/"]) return;
+            var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js");
+            next.router.update("/", updatedPage);
           });
         }
         return mod;
@@ -4320,10 +4320,10 @@ try {
 
 /***/ }),
 
-/***/ "./pages/_error.js":
-/*!*************************!*\
-  !*** ./pages/_error.js ***!
-  \*************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4333,65 +4333,78 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
 var _this = undefined,
-    _jsxFileName = "/Users/student/Desktop/Udemy-React-Complete-Guide/nextjsExample/pages/_error.js";
+    _jsxFileName = "/Users/student/Desktop/Udemy-React-Complete-Guide/nextjsExample/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var errorPage = function errorPage() {
+
+var indexPage = function indexPage() {
   return __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 6,
       columnNumber: 3
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 5
-    }
-  }, "Oops, something went wrong"), __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 7,
       columnNumber: 5
     }
-  }, "Try ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+  }, "The Main Index page"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 12
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, "Go to ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/auth",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 14
     }
   }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 27
+      lineNumber: 8,
+      columnNumber: 33
     }
-  }, "going back"))));
+  }, "Auth"))), __jsx("button", {
+    onClick: function onClick() {
+      return next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/auth');
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }, "Go to auth"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (errorPage);
+/* harmony default export */ __webpack_exports__["default"] = (indexPage);
 
 /***/ }),
 
-/***/ 1:
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2F_error.js&hotRouterUpdates=true ***!
-  \******************************************************************************************************************************************************************************************/
+/***/ 3:
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2Findex.js&hotRouterUpdates=true ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2F_error.js&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_error&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2F_error.js&hotRouterUpdates=true!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2Findex.js&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2Findex.js&hotRouterUpdates=true!./");
 
 
 /***/ }),
@@ -4407,5 +4420,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=_error.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=index.js.map

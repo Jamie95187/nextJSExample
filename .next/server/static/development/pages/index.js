@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1805,10 +1805,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/_error.js":
-/*!*************************!*\
-  !*** ./pages/_error.js ***!
-  \*************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1818,62 +1818,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/student/Desktop/Udemy-React-Complete-Guide/nextjsExample/pages/_error.js";
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/student/Desktop/Udemy-React-Complete-Guide/nextjsExample/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const errorPage = () => __jsx("div", {
+
+const indexPage = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 6,
     columnNumber: 3
   }
 }, __jsx("h1", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 5
-  }
-}, "Oops, something went wrong"), __jsx("p", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 7,
     columnNumber: 5
   }
-}, "Try ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
+}, "The Main Index page"), __jsx("p", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 12
+    lineNumber: 8,
+    columnNumber: 5
+  }
+}, "Go to ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/auth",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 14
   }
 }, __jsx("a", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 27
+    lineNumber: 8,
+    columnNumber: 33
   }
-}, "going back"))));
+}, "Auth"))), __jsx("button", {
+  onClick: () => next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/auth'),
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }
+}, "Go to auth"));
 
-/* harmony default export */ __webpack_exports__["default"] = (errorPage);
+/* harmony default export */ __webpack_exports__["default"] = (indexPage);
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************!*\
-  !*** multi ./pages/_error.js ***!
-  \*******************************/
+/***/ 5:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/student/Desktop/Udemy-React-Complete-Guide/nextjsExample/pages/_error.js */"./pages/_error.js");
+module.exports = __webpack_require__(/*! /Users/student/Desktop/Udemy-React-Complete-Guide/nextjsExample/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 
@@ -1933,4 +1955,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_error.js.map
+//# sourceMappingURL=index.js.map
