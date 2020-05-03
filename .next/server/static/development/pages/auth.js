@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -161,7 +161,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const authIndexPage = () => __jsx("div", {
+const authIndexPage = props => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -175,7 +175,7 @@ const authIndexPage = () => __jsx("div", {
     lineNumber: 6,
     columnNumber: 5
   }
-}, "The auth index page"), __jsx(_components_user__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, "The auth index page - ", props.appName), __jsx(_components_user__WEBPACK_IMPORTED_MODULE_1__["default"], {
   name: "Ja",
   age: 28,
   __self: undefined,
@@ -186,11 +186,23 @@ const authIndexPage = () => __jsx("div", {
   }
 }));
 
+authIndexPage.getInitialProps = context => {
+  console.log(context);
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({
+        appName: 'Super App (Auth)'
+      });
+    }, 1000);
+  });
+  return promise;
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (authIndexPage);
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!***********************************!*\
   !*** multi ./pages/auth/index.js ***!
   \***********************************/

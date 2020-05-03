@@ -999,7 +999,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var authIndexPage = function authIndexPage() {
+var authIndexPage = function authIndexPage(props) {
   return __jsx("div", {
     __self: _this,
     __source: {
@@ -1014,7 +1014,7 @@ var authIndexPage = function authIndexPage() {
       lineNumber: 6,
       columnNumber: 5
     }
-  }, "The auth index page"), __jsx(_components_user__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "The auth index page - ", props.appName), __jsx(_components_user__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "Ja",
     age: 28,
     __self: _this,
@@ -1026,11 +1026,23 @@ var authIndexPage = function authIndexPage() {
   }));
 };
 
+authIndexPage.getInitialProps = function (context) {
+  console.log(context);
+  var promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve({
+        appName: 'Super App (Auth)'
+      });
+    }, 1000);
+  });
+  return promise;
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (authIndexPage);
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!**********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fauth&absolutePagePath=%2FUsers%2Fstudent%2FDesktop%2FUdemy-React-Complete-Guide%2FnextjsExample%2Fpages%2Fauth%2Findex.js&hotRouterUpdates=true ***!
   \**********************************************************************************************************************************************************************************************/
@@ -1053,5 +1065,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=auth.js.map
